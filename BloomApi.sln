@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomApi", "BloomApi\BloomApi.csproj", "{2968955C-2585-4D6A-8E40-15F98A01740C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomApi3.5", "BloomApi\BloomApi3.5.csproj", "{2968955C-2585-4D6A-8E40-15F98A01740C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomApiExample", "BloomApiExample\BloomApiExample.csproj", "{8BC05EFC-8B09-45CE-80E8-CC22C50500CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloomApi", "BloomApi\BloomApi.csproj", "{2B48AE0D-356F-4993-8834-6E3BAF727504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8BC05EFC-8B09-45CE-80E8-CC22C50500CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BC05EFC-8B09-45CE-80E8-CC22C50500CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BC05EFC-8B09-45CE-80E8-CC22C50500CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B48AE0D-356F-4993-8834-6E3BAF727504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B48AE0D-356F-4993-8834-6E3BAF727504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B48AE0D-356F-4993-8834-6E3BAF727504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B48AE0D-356F-4993-8834-6E3BAF727504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
