@@ -12,11 +12,24 @@ namespace BloomApi.Entities
         public string Key { get; set; }
         public BloomApiSearchOperation Operation { get; set; }
         public string Value { get; set; }
+        public IEnumerable<string> Values { get; set; }
 
         public string ToParameters(int index)
         {
             string apiOperation = this.ApiOperationName();
-            return String.Format("key{0}={1}&op{0}={2}&value{0}={3}", index, this.Key, apiOperation, this.Value);
+            string values;
+
+            if (this.Values != null && this.Values.Count() > 0)
+            {
+                IEnumerable<string> valueParameters = this.Values.Select((v) => String.Format("value{0}={1}", index, v));
+                values = String.Join("&", valueParameters.ToArray());
+            }
+            else
+            {
+                values = String.Format("value{0}={1}", index, this.Value);
+            }
+
+            return String.Format("key{0}={1}&op{0}={2}&{3}", index, this.Key, apiOperation, values);
         }
 
         string ApiOperationName()
