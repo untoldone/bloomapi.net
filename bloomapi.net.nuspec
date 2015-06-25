@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/untoldone/bloomapi.net</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>Copyright 2015</copyright>
-    <description>BloomApi.net is a client library for the Healthcare API, https://www.bloomapi.com/. For more information on the client visit https://github.com/untoldone/bloomapi.net</description>
-    <tags>bloomapi, healthcare, medical, medicine</tags>
+    <description>BloomApi.net is a client library for the Healthcare API, https://www.bloomapi.com/. Query healthcare datasets such as the NPI, ICD, HCPCS, and other Medicare data. For more information on the client visit https://github.com/untoldone/bloomapi.net/.</description>
+    <tags>bloomapi, healthcare, medical, medicine, medicare</tags>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="6.0.8" />
     </dependencies>
