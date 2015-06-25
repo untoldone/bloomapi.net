@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>BloomApi.net</id>
+    <title>BloomAPI.net</title>
+    <version>0.1.0.0</version>
+    <authors>Michael Wasser</authors>
+    <owners>Michael Wasser</owners>
+    <licenseUrl>https://raw.github.com/untoldone/bloomapi.net/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/untoldone/bloomapi.net</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright 2015</copyright>
+    <description>BloomApi.net is a client library for the Healthcare API, https://www.bloomapi.com/. For more information on the client visit https://github.com/untoldone/bloomapi.net</description>
+    <tags>bloomapi, healthcare, medical, medicine</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="BloomApi\bin\Release\BloomApi.dll" target="lib\net40" />
+    <file src="BloomApi\bin\Release35\BloomApi.dll" target="lib\net35" />
+  </files>
+</package>
