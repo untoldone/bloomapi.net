@@ -2,8 +2,6 @@
 using BloomApi.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace ConsoleApplication1
 {
@@ -12,6 +10,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             BloomService s = new BloomService();
+
             BloomApiSearchResponse res = s.Search("usgov.hhs.npi", new BloomApiSearchOptions{
                 Limit = 50,
                 Offset = 50,
@@ -28,6 +27,7 @@ namespace ConsoleApplication1
                     }
                 }
             });
+
             Console.ReadKey();
         }
     }

@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
 namespace BloomApi.Entities
@@ -10,6 +9,6 @@ namespace BloomApi.Entities
         public BloomApiMeta Meta { get; set; }
 
         [JsonProperty(PropertyName = "result")]
-        public List<BloomApiSource> Result { get; set; }
+        public IEnumerable<BloomApiSource> Result { get; set; }
     }
 }

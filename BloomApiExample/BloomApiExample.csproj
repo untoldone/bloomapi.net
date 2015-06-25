@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BloomApiExample</RootNamespace>
     <AssemblyName>BloomApiExample</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -50,9 +50,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BloomApi\BloomApi3.5.csproj">
-      <Project>{2968955c-2585-4d6a-8e40-15f98a01740c}</Project>
-      <Name>BloomApi3.5</Name>
+    <ProjectReference Include="..\BloomApi\BloomApi.csproj">
+      <Project>{2b48ae0d-356f-4993-8834-6e3baf727504}</Project>
+      <Name>BloomApi</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
