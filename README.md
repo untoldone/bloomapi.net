@@ -24,7 +24,7 @@ To Build it yourself, open BloomApi.sln and build.
     BloomService service = new BloomService("<api key here>");
 
     // If using your own server (with or without your own API keys)
-    BloomService service = new BloomService("<api key here or null>", "http://www.bloomapi.com/api");
+    BloomService service = new BloomService("<api key here or null>", new Uri("https://www.bloomapi.com/api/"));
 
 **Query available datasources**
 
@@ -69,7 +69,8 @@ To Build it yourself, open BloomApi.sln and build.
 
     while (more)
     {
-        response = service.Search("usgov.hhs.hcpcs", new BloomApiSearchOptions
+        Console.WriteLine("more");
+        response = service.Search("usgov.hhs.npi", new BloomApiSearchOptions
         {
             Offset = offset,
             Terms = new List<BloomApiSearchTerm>
@@ -82,10 +83,14 @@ To Build it yourself, open BloomApi.sln and build.
             }
         });
 
+
         npis.AddRange(response.Result);
 
         if (response.Meta.RowCount - offset <= 100) more = false;
+        offset += 100;
     }
+
+    Console.WriteLine("done");
 
     foreach (var npi in npis)
     {
@@ -127,6 +132,11 @@ This also specifies an offset and limit using the options parameter.
             }
         }
     });
+
+    foreach (var item in response.Result)
+    {
+        Console.WriteLine(item["code"]);
+    }
 
 **Find a National Provider Identifier its NPI**
 
