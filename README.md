@@ -17,10 +17,10 @@ To Build it yourself, open BloomApi.sln and build.
 
 **Create a new client**
 
-	// Basic
-	BloomService service = new BloomService("<api key here>");
+    // Basic
+    BloomService service = new BloomService();
 
-	// If using an API Key
+    // If using an API Key
     BloomService service = new BloomService("<api key here>");
 
     // If using your own server (with or without your own API keys)
@@ -99,6 +99,7 @@ To Build it yourself, open BloomApi.sln and build.
 
 
 **Search HCPCS Procedure Codes for any code with word that starts with 'ambula' in the description'**
+
 This also specifies an offset and limit using the options parameter.
 
     BloomApiSearchResponse response = service.Search("usgov.hhs.hcpcs", new BloomApiSearchOptions
