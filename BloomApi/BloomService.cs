@@ -89,10 +89,10 @@ namespace BloomApi
             return BloomService.GetRequest<BloomApiSourcesResponse>(uri);
         }
 
-        public BloomApiSearchResponse Search(string sourceName, BloomApiSearchOptions options)
+        public BloomApiSearchResponse Search(string sourceName, BloomApiSearchOptions options = null)
         {
             string uri = String.Format(searchUri, sourceName);
-            string parameters = options.ToParameters();
+            string parameters = options != null ? options.ToParameters() : "";
 
             if (!String.IsNullOrEmpty(this.ApiKey))
             {
