@@ -3,8 +3,6 @@ BloomAPI.net
 
 A .net client to [BloomAPI](http://www.bloomapi.com).
 
-Currently a work in progress ... stay tuned.
-
 # Setup
 
 BloomAPI.net is available on NuGet via
