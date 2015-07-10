@@ -27,6 +27,7 @@ namespace BloomApi
         private static T GetRequest<T>(string uri)
         {
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(uri);
+            request.UserAgent = String.Format("BloomAPI.net {0}", typeof(BloomService).Assembly.GetName().Version);
             HttpWebResponse resp = null;
             T parsedResponse = default(T);
 
